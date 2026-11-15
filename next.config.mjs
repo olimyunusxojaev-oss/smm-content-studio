@@ -1,10 +1,10 @@
 /** @type {import('next').NextConfig} */
-const isProd = process.env.NODE_ENV === 'production';
+const isGithubPages = Boolean(process.env.GITHUB_PAGES);
 
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/smm-content-studio' : '',
-  assetPrefix: isProd ? '/smm-content-studio/' : '',
+  output: isGithubPages ? 'export' : undefined,
+  basePath: isGithubPages ? '/smm-content-studio' : '',
+  assetPrefix: isGithubPages ? '/smm-content-studio/' : undefined,
   images: {
     unoptimized: true,
   },
