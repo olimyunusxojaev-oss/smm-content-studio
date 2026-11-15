@@ -44,7 +44,7 @@ export interface HistoryItem {
 
 export interface UserSettings {
   geminiApiKey: string;
-  preferredModel: string;
+  preferredModel: 'gemini-3.8-flash' | 'gemini-3.5-flash-lite' | 'gemini-3.8-pro' | string;
   savedBusinessProfile: string;
   defaultTone: ToneOfVoice;
   soundEnabled: boolean;

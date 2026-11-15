@@ -4,7 +4,7 @@
 > **Версия:** 1.0.0  
 > **Статус:** Ready for Review & Implementation  
 > **Целевая платформа:** Mobile-First Web App (PWA Responsive, 375px–430px base viewport)  
-> **LLM Engine:** Google Gemini API (`gemini-2.5-flash` / `gemini-2.0-flash` / `gemini-1.5-flash-lite`)  
+> **LLM Engine:** Google Gemini API (`gemini-3.8-flash` / `gemini-3.5-flash-lite` / `gemini-3.8-pro`)  
 
 ---
 

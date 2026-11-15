@@ -37,7 +37,7 @@ export const Header: React.FC<HeaderProps> = ({
             Social<span className="text-brand-bronze font-normal">Studio</span>
           </span>
           <span className="ml-1.5 px-1.5 py-0.5 text-[10px] font-medium tracking-wide uppercase rounded-full bg-brand-bronze/15 text-brand-bronzeDark dark:text-brand-bronze">
-            3.5 Lite
+            3.8 Flash
           </span>
         </div>
       </div>

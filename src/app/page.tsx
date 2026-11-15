@@ -24,7 +24,7 @@ export default function StudioPage() {
   const [theme, setTheme] = useState<'light' | 'dark'>('light');
   const [soundEnabled, setSoundEnabled] = useState(true);
   const [apiKey, setApiKey] = useState('');
-  const [model, setModel] = useState('gemini-2.0-flash');
+  const [model, setModel] = useState('gemini-3.8-flash');
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [isHistoryOpen, setIsHistoryOpen] = useState(false);
   const [historyCount, setHistoryCount] = useState(0);
@@ -48,7 +48,12 @@ export default function StudioPage() {
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const savedKey = localStorage.getItem('smm_gemini_api_key') || '';
-      const savedModel = localStorage.getItem('smm_gemini_model') || 'gemini-2.0-flash';
+      let savedModel = localStorage.getItem('smm_gemini_model') || 'gemini-3.8-flash';
+      // Auto-migrate from deprecated gemini-2.0 or 1.5 to latest gemini-3.8-flash
+      if (savedModel.includes('2.0') || savedModel.includes('1.5') || savedModel.includes('2.5')) {
+        savedModel = 'gemini-3.8-flash';
+        localStorage.setItem('smm_gemini_model', 'gemini-3.8-flash');
+      }
       const savedProfile = localStorage.getItem('smm_business_profile') || '';
       const savedTheme = (localStorage.getItem('smm_theme') as 'light' | 'dark') || 'light';
       const savedSound = localStorage.getItem('smm_sound') !== 'false';

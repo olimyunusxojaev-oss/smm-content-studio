@@ -33,7 +33,7 @@ flowchart TD
     end
 
     subgraph Google_AI ["Google Cloud Infrastructure"]
-        GeminiAPI["Google Gemini API (gemini-2.0-flash / 1.5-flash-lite)"]
+        GeminiAPI["Google Gemini API (gemini-3.8-flash / 3.5-flash-lite)"]
     end
 
     BYOK -->|x-goog-api-key| DirectClient

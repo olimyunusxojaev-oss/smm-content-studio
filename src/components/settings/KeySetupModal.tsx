@@ -16,9 +16,9 @@ interface KeySetupModalProps {
 }
 
 const availableModels = [
-  { id: 'gemini-2.0-flash', label: 'Gemini 2.0 Flash (Рекомендуется, быстрый и умный)' },
-  { id: 'gemini-1.5-flash-lite', label: 'Gemini 1.5 Flash Lite (Сверхлегкий)' },
-  { id: 'gemini-2.5-flash', label: 'Gemini 2.5 Flash' },
+  { id: 'gemini-3.8-flash', label: 'Gemini 3.8 Flash (Рекомендуется Google, актуальный флагман)' },
+  { id: 'gemini-3.5-flash-lite', label: 'Gemini 3.5 Flash Lite (Сверхлегкий)' },
+  { id: 'gemini-3.8-pro', label: 'Gemini 3.8 Pro (Глубокий анализ)' },
 ];
 
 export const KeySetupModal: React.FC<KeySetupModalProps> = ({
@@ -29,7 +29,11 @@ export const KeySetupModal: React.FC<KeySetupModalProps> = ({
   currentModel,
 }) => {
   const [inputKey, setInputKey] = useState(apiKey);
-  const [selectedModel, setSelectedModel] = useState(currentModel || 'gemini-2.0-flash');
+  const [selectedModel, setSelectedModel] = useState(
+    currentModel && !currentModel.includes('2.0') && !currentModel.includes('1.5')
+      ? currentModel
+      : 'gemini-3.8-flash'
+  );
   const [showKey, setShowKey] = useState(false);
   const [isTesting, setIsTesting] = useState(false);
   const [testResult, setTestResult] = useState<{ valid: boolean; message: string } | null>(null);

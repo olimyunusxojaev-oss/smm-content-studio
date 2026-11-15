@@ -10,7 +10,7 @@ export interface StreamCallbacks {
 /**
  * Validate a Gemini API key with a minimal request
  */
-export async function testGeminiApiKey(apiKey: string, model: string = 'gemini-2.0-flash'): Promise<{ valid: boolean; message: string }> {
+export async function testGeminiApiKey(apiKey: string, model: string = 'gemini-3.8-flash'): Promise<{ valid: boolean; message: string }> {
   if (!apiKey || apiKey.trim().length < 10) {
     return { valid: false, message: 'Ключ слишком короткий или пустой' };
   }
@@ -47,7 +47,7 @@ export async function testGeminiApiKey(apiKey: string, model: string = 'gemini-2
 export async function streamPostGeneration(
   params: GenerationParams,
   apiKey: string,
-  model: string = 'gemini-2.0-flash',
+  model: string = 'gemini-3.8-flash',
   callbacks: StreamCallbacks,
   signal?: AbortSignal
 ): Promise<void> {
