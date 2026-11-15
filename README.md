@@ -2,7 +2,10 @@
 
 > **Mobile-First веб-приложение для генерации контента для соцсетей (Telegram, Instagram, YouTube) на базе Google Gemini API.**
 
-🌐 **Live Demo (Рабочее веб-приложение):**  
+🌐 **Live Production Web App (Vercel):**  
+👉 **[https://smm-content-studio.vercel.app](https://smm-content-studio.vercel.app)**
+
+🌐 **Зеркало на GitHub Pages:**  
 👉 **[https://olimyunusxojaev-oss.github.io/smm-content-studio/](https://olimyunusxojaev-oss.github.io/smm-content-studio/)**
 
 Создано с фокусом на избавление от «нейрослопа», утонченную эстетику *Warm Editorial / Quiet Luxury*, пружинную физику Framer Motion, тактильный отклик (Web Audio ASMR + Haptics) и модель полной приватности **BYOK (Bring Your Own Key)**.
