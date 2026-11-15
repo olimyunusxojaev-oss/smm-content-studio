@@ -2,12 +2,16 @@
 
 > **Mobile-First веб-приложение для генерации контента для соцсетей (Telegram, Instagram, YouTube) на базе Google Gemini API.**
 
+🌐 **Live Demo (Рабочее веб-приложение):**  
+👉 **[https://olimyunusxojaev-oss.github.io/smm-content-studio/](https://olimyunusxojaev-oss.github.io/smm-content-studio/)**
+
 Создано с фокусом на избавление от «нейрослопа», утонченную эстетику *Warm Editorial / Quiet Luxury*, пружинную физику Framer Motion, тактильный отклик (Web Audio ASMR + Haptics) и модель полной приватности **BYOK (Bring Your Own Key)**.
 
 ---
 
 ## ✨ Ключевые возможности
 
+- 🌐 **Работает прямо в браузере:** Развернуто на GitHub Pages без необходимости локальной установки: [Открыть приложение](https://olimyunusxojaev-oss.github.io/smm-content-studio/).
 - 📱 **Mobile-First UX & Safe Areas:** Интерфейс оптимизирован под управление одной рукой — фиксированный плавающий док действий снизу (Thumb Sticky Dock).
 - 🧠 **Google Gemini Engine:** Поддержка моделей `gemini-2.0-flash`, `gemini-1.5-flash-lite` и `gemini-2.5-flash` со структурированным JSON-выводом.
 - 🎯 **3 разноплановых варианта:** Каждая генерация создает 3 альтернативы:
@@ -26,6 +30,7 @@
 ## 🛠 Технологический стек
 
 - **Фреймворк:** [Next.js 15](https://nextjs.org/) (App Router, React 19)
+- **Хостинг:** [GitHub Pages](https://olimyunusxojaev-oss.github.io/smm-content-studio/)
 - **Язык:** TypeScript 5
 - **Стилизация:** [Tailwind CSS 3.4](https://tailwindcss.com/)
 - **Анимации:** [Framer Motion 12](https://www.framer.com/motion/) (пружинная физика, layoutId)
@@ -37,21 +42,22 @@
 
 ## 🚀 Быстрый запуск
 
-### 1. Клонирование и установка зависимостей
+### Вариант 1: Открыть онлайн без установки
+Просто перейдите по ссылке:  
+👉 **[https://olimyunusxojaev-oss.github.io/smm-content-studio/](https://olimyunusxojaev-oss.github.io/smm-content-studio/)**
+
+### Вариант 2: Локальная разработка
 ```bash
 git clone https://github.com/olimyunusxojaev-oss/smm-content-studio.git
 cd smm-content-studio
 npm install
-```
-
-### 2. Запуск локального сервера разработки
-```bash
 npm run dev
 ```
+Откройте [http://localhost:3000](http://localhost:3000).
 
-Откройте [http://localhost:3000](http://localhost:3000) в браузере (или перейдите по локальному IP с мобильного устройства в той же Wi-Fi сети).
+---
 
-### 3. Настройка API-ключа
+## 🔑 Как начать пользоваться:
 1. Нажмите на иконку ключа `⚙️ / 🔑` в верхнем правом углу.
 2. Вставьте ваш бесплатный ключ из [Google AI Studio](https://aistudio.google.com/app/apikey).
 3. Нажмите «Проверить ключ» и «Сохранить».
